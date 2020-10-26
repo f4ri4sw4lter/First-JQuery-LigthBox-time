@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="album">
+        <a data-lightbox="group" data-title="name" href="assets/img/empleado01-grande.png"><img src="assets/img/empleado01.png" alt=""></a>
+        <a data-lightbox="group" data-title="name" href="assets/img/empleado02-grande.png"><img src="assets/img/empleado02.png" alt=""></a>
+        <a data-lightbox="group" data-title="name" href="assets/img/empleado03-grande.png"><img src="assets/img/empleado03.png" alt=""></a>
+        <a data-lightbox="group" data-title="name" href="assets/img/empleado04-grande.png"><img src="assets/img/empleado04.png" alt=""></a>
+    </div>
+    <button id="hide">hide</button>
+    <button id="show">Show</button>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        $('#hide').click(hide);
+        $('#show').click(show);
+
+        function hide(){
+            $('#album').hide();
+        }
+        function show(){
+            $('#album').show();
+        }
+    </script>
+</body>
+</html>
